@@ -34,13 +34,12 @@
 
   <div id="vf-chat"></div>
 
-  <!-- Script Voiceflow corretto -->
-  <script type="text/javascript">
-    (function(d, t) {
+ <script type="text/javascript">
+  (function(d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
       v.onload = function() {
         window.voiceflow.chat.load({
-          verify: { projectID: '680a64f3e61d2476b0f296a1' },
+          verify: { projectID: '6813360587e329c87bbb6aa9' },
           url: 'https://general-runtime.voiceflow.com',
           versionID: 'production',
           voice: {
@@ -48,15 +47,13 @@
           },
           render: {
             mode: 'embedded',
-            target: document.getElementById('vf-chat')
+            target: document.getElementById(...)
           }
         });
-      };
-      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
-      v.type = "text/javascript";
-      s.parentNode.insertBefore(v, s);
-    })(document, 'script');
-  </script>
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
 
 </body>
 </html>
